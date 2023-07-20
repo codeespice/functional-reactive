@@ -1,0 +1,7 @@
+PredicateExercise -> take any input T and returns boolean
+ConsumerExercise -> takes any input T but does not return anything
+SupplierExercise -> does not take any input but return type T
+FunctionExercise -> takes any input of type T and returns R type
+UnaryOperatorExercise -> takes any input of type T and returns T type (restricted only to T)
+BiFuntionalExercise -> takes two inputs of type T and U and returns R type
+BinaryOperatorExercise -> takes two inputs of type T and T and returns T type
