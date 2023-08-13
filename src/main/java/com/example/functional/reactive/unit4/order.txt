@@ -1,0 +1,34 @@
+1.Firstclass citizen : That is functions are similar to primitive i.e pass as arguments and return as function returns
+2.Pure functions - no side effects :
+            : 1. Out put of pure function depends only on
+                a. Its input parameters
+                b. Its internal algorithm
+                 i.e does not depend on any other function and no side effects  like referencing external variable or class variable
+                 i.e same result with same input e,g consumer in java has side effect since itsretun type is void it can do any thing in the void method
+3.Higher order functions :
+                1. Function that takes one or more functions as input or return functions or does both (input and return function)
+4.Referential Transparency :
+                1. A property of function , variable,or expression whereby the expression can be
+                    replaced by its (evaluated) value without affecting the behaviour of the program
+                2.Pure functions always achieve referential transparency
+                3.Functions with side effects does not achieve referential transparency
+5.Writing Functional API
+6.Function chaining :
+                1. object.function1().function2() -> first function executed first and then second function
+7.Functional Composition :
+                2.object.function1().function2() -> second function executed first and then first function
+8.Closures  :
+                1. Any stored value in function i.e refers to free variables in its lexical context
+9.Currying :
+                1. Currying is a functional programming concept that involves transforming a function that takes multiple arguments into a series
+                    of functions, each taking a single argument. In Java, you can achieve currying using lambdas or functional interfaces.
+
+10.Lazy Evaluation :
+                1. Default lamda's are lazy evaluated i.e at run time than compile time
+11.Tail Call Optimization :
+                1. Factorial ->  return (n*factorial(n-1)) -> here recursive function stores all the functions in the stack i.e func(n-1)..func(n-2) ...until n=1
+                    and then calculates the result it can have memory issue since all the functions are stored
+
+                2. Factorial -> factorial(n,a)){ if (n=1) return a else return factorial(n-1,n*a); -> here a is returned at the end
+                and does not wait until the last call since multiplication is done already
+
