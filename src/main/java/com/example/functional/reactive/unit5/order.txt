@@ -1,0 +1,21 @@
+
+1. Iterator Design Pattern -> behavioural design pattern
+    accessing elements of container without exposing structure of the object
+    eg Iterator , Enumeration
+
+2. Strategy Design Pattern : when we have multiple Solutions or algorithms to solve a specific task
+                                and client decides the specific implementation which is used at runtime
+                                ex . Collections.sort(List<String> col ,Comparator c)
+3. Decorator Design pattern: used to modify functionality of the object at run time without affecting
+                            other instances of same class eg: File classes
+4.Fluent Design pattern : achieve Human readable format
+5.Factory Design Pattern : is a way to instantiating a class inside the designated method that
+                            we call a factory method eg Calendar.getInstance()
+6.Builder Design Pattern : providing flexibility in object creation . the intent of builder design pattern is
+                            to isolate the construction of  complex object from its representation
+                                eg. StringBuilder
+
+                               1. object should be constructed only by builder
+                               2. builder accepts parameters randomly and have build method to check build
+7.Command Design pattern: Encapsulate request as an object , parametrize clients with different requests
+                        and perform corresponding operations
