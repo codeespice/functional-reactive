@@ -1,0 +1,22 @@
+1. Custom Collectors -> use custom collectors to return your own collection return type
+
+
+
+When stream.collect(colletor) is called following functions are called on the collector
+( remember higherorder function that returns the functions and then those functions are called)
+1. Supplier -> supplier
+2.Accumulator -> Biconsumer
+3.Combiner ->Binary Operator
+4.Finisher ->Function
+5.Characteristics -> Set
+
+
+container = collector.supplier().get()-> returns stream
+ BiConsumer accumulator = collector.accumulator()
+
+    foreach(u->accumulator.accept(container,u))
+
+    return collector.finisher.apply(container)
+
+
+2. Collector Interface Example

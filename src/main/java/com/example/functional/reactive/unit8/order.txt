@@ -1,0 +1,5 @@
+1. SPliterator  ; Implement spliterator to connect Stream to custom source. follow example
+                1. charactristics of stream eg ordered , sorted helps in processing the stream
+                    for example spliterator on list stream will have default order and for Treeset it will be sorted
+                    if you apply treeset.stream().sorted().count() -> sorted() will not be executed
+                    since Treeset is already sorted so optimization is implemented this way

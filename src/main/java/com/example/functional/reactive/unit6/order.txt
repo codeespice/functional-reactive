@@ -1,3 +1,39 @@
 https://dzone.com/articles/sql-like-operations-with-java-using-streams
 https://howtodoinjava.com/java/stream/collectors-groupingby/
 https://www.youtube.com/watch?v=PMhrMDHFFW4
+
+Streams :
+1. Observing the streams
+2. Stream pipeline : contains
+                        1. Source (collection or generator or Intermediate..)
+                        2. Zero or More Intermediate Operation (filter,map..)
+                        3. A Terminal Operation ( collect or reduce ..)
+
+3. Single Use : java class
+4. Once collector is calles thats the end of life cycle of stream , If you call any operation after that you will get
+illegal state exception with message Stream has been already operated upon or closed
+5. Filter Operation -> Filters element by using predicate
+6. Map Operation-> takes function and returns object
+                    1. Should not change the state of object using map or in any functional programming
+7. Reduce Operation -> combining all the elements , takes identity and accumilator (0 is additional identity i.e no change in result)
+8. Streams are lazy , until terminal operation is called streams are not triggered
+9.Numeric Operation : Contains average,sum .. on top of regular Streams
+10.Bounded Streams vs Unbounded Stream :  1. Regular collections are bounded stream , if you generate conitnuously then its unbounded
+11.FlatMap -> flattens Stream of streams . ie of stream has list of streams flatmap method flattens(joins) streams together
+12. parallel Streams -> execute code faster i.e use multicore processing, Parallel execution has more complexity that sequential
+                        1. Stream should be stateless
+                        2.Non interfering
+                        3.Associative
+
+                        Challenges :
+                            1. multithreading
+                            2. Visibility issue
+
+
+
+                 1. Stateful : use variable outside from the stream code
+                 1. Stateful : does not use any information outside of stream
+13. Setting Parallelism : System.setProperty(java.util.concurrent.forkjoinpool.common.parallelism,2) -> uses only two cores
+  number of threads always > number of cores , even when you set cores
+
+  Use ForkJoinPool to execute the task

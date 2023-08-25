@@ -1,0 +1,37 @@
+1. Collectors - Summerize and agrregate the data on stream and returns collector
+                Collectors is a class that has methods to collect
+                Collectors.toList() -> to take stream data and return list
+
+           Collectors -> 1. Teminal Collector( regular collector that we use on stream.collect()
+                                1. list collector
+                                2.Set Collector
+                                3.Map collector
+                                4.To any collector
+
+                         2.DownStream Collectors
+                            used for collector cascading
+                         3. Cascading collector
+                            use collectors inside one another
+
+
+2. CollectorsAction -> Class for Examples
+                    List
+                        1. Collectors.toList()-> returns list
+                        2.Collectors.toUnmodifiableList()->returns list
+
+                     Map
+                        1.Collectors.toMap(keyMapper,valueMapper)-> returns list
+                        2.Collectors.toUnmodifiableMap(keyMapper,valueMapper)->returns list
+                        3.Collectors.partitioningBy(predicate) -> seperates collection to two different collections based on the partition
+                        4.Collectors.groupingBy(classifier) -> Similar to sql groupby , returns map with key as classifier , and value as list
+
+
+3.ToCollection Method -> returns other than list,set,map
+4.Collectors.joining(seperator) -> join the all the values with the seperator
+5.Downstream Collectors or Cascading collectors ->1. use cascading for the collectors i.e post processing
+        2. collectors that take collectors as argument
+
+
+
+
+

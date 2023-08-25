@@ -1,0 +1,6 @@
+1. List
+        a. for each
+        b.sort
+ 2. Set
+ 3.Map
+
